@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group List</title>
+</head>
+<body>
+
+    {% if groups %}
+        <h1>Groups</h1>
+        <ul>
+            {% for group in groups %}
+                <li>{{ group.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No groups available.</p>
+    {% endif %}
+
+
+    
+</body>
+</html>
